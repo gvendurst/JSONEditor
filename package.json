@@ -1,0 +1,24 @@
+{
+  "name": "JsonEditor",
+  "version": "1.0.0",
+  "description": "An editor to create and edit JSON",
+  "main": "src/index.js",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-watch": "^0.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gvendurst/JSONEditor"
+  },
+  "author": "Guðmundur Stefánsson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gvendurst/JSONEditor/issues"
+  },
+  "homepage": "https://github.com/gvendurst/JSONEditor"
+}
