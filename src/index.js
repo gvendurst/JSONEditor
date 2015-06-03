@@ -1,3 +1,15 @@
+//Set up the module with dependencies
+angular.module("JSONEditor", ['ngRoute']);
+
+//Set up routing for the application
+angular.module("JSONEditor").config(["$routeProvider", function($routeProvider){
+	$routeProvider.when("/", {
+		templateUrl: "src/Main.html",
+		controller: "MainCtrl"
+	}).otherwise({redirectTo: "/"});
+}]);
+
+/*
 function readSingleFile(fileName) {
 	var theFile = new XMLHttpRequest();
 	theFile.open("GET", fileName, false);
@@ -37,3 +49,4 @@ function loadXMLDoc(fileName){
 	
 	return xmlDoc;
 }
+*/
