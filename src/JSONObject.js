@@ -3,10 +3,14 @@ function(){
 	return {
 		restrict: "E",
 		replace: "true",
-		//template: "<p>HERP</p>",
+		scope: {
+			object: "="
+		},
 		templateUrl: "src/JSONObject.html",
+		
 		link: function(scope, elem, attrs){
-			scope.object = attrs.object;
+			
 		}
+		
 	};
 });
