@@ -4,6 +4,7 @@ function($scope){
 	$scope.theObject = {};
 	$scope.theObject.herp = "derp";
 	$scope.theObject.ferp = "herp";
+	$scope.theObject.derp = { herp: "herp"};
 	
 	
 }]);
