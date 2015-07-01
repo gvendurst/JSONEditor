@@ -1,10 +1,8 @@
 <div>
 	<ul>
-		<li ng-repeat="(key, value) in object">
-			{{key}}:
-			<input value={{value}} ng-if="!isAnObject(value)"></input>
-			<!-- Add a json-object conditionally without ng-if -->
-			<p ng-if="isAnObject(value)">{{value}}</p>
-		</li>
+		<json-object-member ng-repeat="(key, value) in object" member="value" member-name="key">
+			<p>HERP</p>
+			
+		</json-object-member>
 	</ul>
 </div>
