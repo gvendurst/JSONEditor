@@ -10,19 +10,6 @@ function(){
 		
 		link: function(scope, elem, attrs){
 			
-
-			
-		
-		
-			scope.isAnObject = function(value){
-				return (typeof value) === (typeof {});
-			};
-			
-			
-			
 		},
-		
-		
-		
 	};
 });
