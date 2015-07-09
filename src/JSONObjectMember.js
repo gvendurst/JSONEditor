@@ -4,20 +4,20 @@ function($compile){
 		restrict: "E",
 		replace: "true",
 		scope: {
-			memberName: "=",
-			member: "="
+			jeMemberName: "=",
+			jeMember: "="
 		},
 		templateUrl: "src/JSONObjectMember.html",
 		
 		link: function(scope, elem, attrs){
-			console.log(scope.member);
+			console.log(scope.jeMember);
 			
 			//Object.keys(scope.member).forEach(function(key){
 				//console.log(key, scope.member[key]);
 				
-				if (angular.isObject(scope.member)) {
-					console.log(scope.member);
-					elem.append("<json-object object='member'></json-object>");
+				if (angular.isObject(scope.jeMember)) {
+					console.log(scope.jeMember);
+					elem.append("<json-object je-object='jeMember'></json-object>");
 					$compile(elem.contents())(scope)
 				}
 				

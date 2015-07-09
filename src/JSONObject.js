@@ -4,7 +4,7 @@ function(){
 		restrict: "E",
 		replace: "true",
 		scope: {
-			object: "="
+			jeObject: "="
 		},
 		templateUrl: "src/JSONObject.html",
 		
